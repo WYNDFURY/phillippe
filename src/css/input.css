@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-primary text-white;
+    }
+}
+
+@layer components {
+
+    .navigation-list {
+        @apply flex justify-between items-center w-10/12 
+    }
+
+    .navigation-item {
+        @apply mx-6 py-1 hover:bg-lightpurple hover:rounded-full hover:px-6 hover:mx-0 
+    }
+
+    .navigation-item-hover{
+       @apply bg-lightpurple rounded-full px-6 mx-0 
+    }
+
+    .navigation-text {
+        @apply text-xs font-bold 
+    }
+    
+    .main-pc-title{
+        @apply text-4xl font-bold
+    }
+
+    .main-pc-text{
+        @apply font-medium text-sm
+    }
+
+    .main-pc-bold-text{
+        @apply text-lightpurple font-extrabold
+    }
+
+    .main-pc-btn {
+        @apply bg-lightpurple rounded-full mr-auto border border-lightpurple hover:bg-darkblue hover:border hover:border-white transition-all
+    }
+    
+}
